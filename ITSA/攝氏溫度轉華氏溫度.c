@@ -8,5 +8,5 @@ int main()
     f = round(c * 9 / 5  * 10 + 320) / 10.0;
     printf("%.1f\n", f);
 	
-	return 0;
+    return 0;
 }
