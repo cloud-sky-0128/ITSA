@@ -2,7 +2,7 @@
 
 int main()
 {
-	int b, h;
+    int b, h;
     double area;
     scanf("%d %d", &b, &h);
     area = (double)(b * h) / 2;
