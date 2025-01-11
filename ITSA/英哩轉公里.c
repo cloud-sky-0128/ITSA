@@ -2,7 +2,7 @@
 
 int main()
 {
-	int mi;
+    int mi;
     double km;
     scanf("%d", &mi);
     km = (double)mi * 1.6;
