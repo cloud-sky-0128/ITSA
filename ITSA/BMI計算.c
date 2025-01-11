@@ -8,5 +8,5 @@ int main()
     BMI = w / (h * h);
     printf("%.2f\n", BMI);
 	
-	return 0;
+    return 0;
 }
