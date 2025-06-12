@@ -1,14 +1,17 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
     int number;
-    scanf("%d", &number);
+    cin >> number;
+
     for (int i = 10000; i > 0; i /= 10) {
         for (int j = 0; j < number / i; j++) {
-            printf("*");
+            cout << "*";
         }
-        printf("\n");
+        cout << endl;
         number = number % i;
     }
+
     return 0;
 }
