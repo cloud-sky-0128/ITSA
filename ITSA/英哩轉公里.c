@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
-int main()
-{
+int main() {
     int mi;
     double km;
-    scanf("%d", &mi);
-    km = (double)mi * 1.6;
-    printf("km=%.1f\n", km);
-	
-	return 0;
+    cin >> mi;
+    km = static_cast<double>(mi) * 1.6;
+    cout << "km=" << fixed << setprecision(1) << km << endl;
+
+    return 0;
 }
