@@ -1,17 +1,18 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
     char letter;
-    scanf("%c", &letter);
+    cin >> letter;
 
     if (letter == 'a' || letter == 'A' ||
         letter == 'e' || letter == 'E' ||
         letter == 'i' || letter == 'I' ||
         letter == 'o' || letter == 'O' ||
         letter == 'u' || letter == 'U') 
-        printf("母音\n");
+        cout << "母音" << endl;
     else 
-        printf("子音\n");
+        cout << "子音" << endl;
 
     return 0;
 }
