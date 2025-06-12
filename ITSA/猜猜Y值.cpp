@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
     int n, x;
-    scanf("%d", &n);
+    cin >> n;
     for (int i = 0; i < n; i++) {
-        scanf("%d", &x);
+        cin >> x;
         if (x >= 50 && x <= 70) {
-            printf("%d\n", x);
+            cout << x << endl;
         } else {
-            printf("100\n");
+            cout << 100 << endl;
         }
     }
     return 0;
