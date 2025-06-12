@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int main()
-{
+int main() {
     int n, i;
 
-    scanf("%d", &n);
+    cin >> n;
     for (int num = 0; num < n; num++) {
         int result = 1;
-        scanf("%d", &i);
+        cin >> i;
         if (i > 31)
-            printf("Value of more than 31\n");
+            cout << "Value of more than 31" << endl;
         else {
             result = result << i;
-            printf("%d\n", result);
+            cout << result << endl;
         }
     }
 
