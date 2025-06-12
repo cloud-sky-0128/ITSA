@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdbool.h>
+#include <iostream>
+using namespace std;
 
 bool isPrime(int num) {
     if (num < 2) return false;
@@ -10,9 +10,8 @@ bool isPrime(int num) {
 }
 
 int main() {
-    int N, largest;
-
-    scanf("%d", &N);
+    int N, largest = -1;
+    cin >> N;
 
     for (int i = N - 1; i > 1; i--) {
         if (isPrime(i)) {
@@ -21,7 +20,6 @@ int main() {
         }
     }
 
-    printf("%d\n", largest);
-
+    cout << largest << endl;
     return 0;
 }
