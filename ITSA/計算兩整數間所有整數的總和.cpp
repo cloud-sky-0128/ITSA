@@ -1,21 +1,25 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
     int n, X, Y, sum;
 
-    scanf("%d", &n);
-    for(int num = 0; num < n; num++) {
+    cin >> n;
+    for (int num = 0; num < n; num++) {
         sum = 0;
-        scanf("%d %d", &X, &Y);
+        cin >> X >> Y;
+
         if (X > Y) {
             int temp = X;
             X = Y;
             Y = temp;
         }
+
         for (int i = X; i <= Y; i++) {
             sum += i;
         }
-        printf("%d\n", sum);
+
+        cout << sum << endl;
     }
 
     return 0;
