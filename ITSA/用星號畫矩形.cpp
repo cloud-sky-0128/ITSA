@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-    int m, n; 
-    scanf("%d %d", &m, &n);
+    int m, n;
+    cin >> m >> n;
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            printf("*"); 
+            cout << "*";
         }
-        printf("\n"); 
+        cout << endl;
     }
 
     return 0;
