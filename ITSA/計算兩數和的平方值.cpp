@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
     int n;
-    scanf("%d", &n);
+    cin >> n;
 
     for (int i = 0; i < n; i++) {
         int X, Y;
-        scanf("%d %d", &X, &Y);
+        cin >> X >> Y;
         int square = (X + Y) * (X + Y);
-        printf("%d\n", square);
+        cout << square << endl;
     }
 
     return 0;
